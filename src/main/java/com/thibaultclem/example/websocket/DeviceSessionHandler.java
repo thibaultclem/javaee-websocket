@@ -2,6 +2,7 @@ package com.thibaultclem.example.websocket;
 
 import com.thibaultclem.example.model.Device;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.json.JsonObject;
 import javax.json.spi.JsonProvider;
 import javax.websocket.Session;
@@ -16,6 +17,8 @@ import java.util.logging.Logger;
 /**
  * Created by thibaultclement on 13/04/16.
  */
+
+@ApplicationScoped
 public class DeviceSessionHandler {
 
     private int deviceId = 0;

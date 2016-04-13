@@ -2,6 +2,7 @@ package com.thibaultclem.example.websocket;
 
 import com.thibaultclem.example.model.Device;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.json.Json;
 import javax.json.JsonObject;
@@ -16,6 +17,7 @@ import java.util.logging.Logger;
  * Created by thibaultclement on 13/04/16.
  */
 
+@ApplicationScoped
 @ServerEndpoint("/actions") //Declare the server endpoint
 public class DeviceWebSocketServer {
 
