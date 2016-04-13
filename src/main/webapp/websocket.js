@@ -3,7 +3,7 @@
  */
 
 window.onload = init;
-var socket = new WebSocket("ws://http://localhost:8080/javaee-websocket//actions");
+var socket = new WebSocket("ws://localhost:8080/javaee-websocket/actions");
 socket.onmessage = onMessage;
 
 function onMessage(event) {
